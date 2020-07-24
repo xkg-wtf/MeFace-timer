@@ -1,0 +1,36 @@
+{
+  "name": "meface_online_timer",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "yarn && webpack --mode production",
+    "webpack": "yarn && webpack-dev-server --inline"
+  },
+  "private": "true",
+  "dependencies": {
+    "easytimer": "^1.1.1",
+    "jquery": "^3.5.1",
+    "webpack": "^4.44.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/runtime-corejs2": "^7.0.0",
+    "@wordpress/babel-preset-default": "^2.1.0",
+    "autoprefixer": "^9.1.3",
+    "babel-loader": "^8.0.0",
+    "concurrently": "^5.2.0",
+    "copy-webpack-plugin": "^6.0.3",
+    "cross-env": "^5.2.0",
+    "css-loader": "^1.0.0",
+    "eslint": "^7.5.0",
+    "extract-loader": "^2.0.1",
+    "file-loader": "^2.0.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "node-sass": "^4.9.3",
+    "postcss-cli": "^6.0.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
