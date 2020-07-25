@@ -3,7 +3,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "yarn && webpack --mode production",
-    "webpack": "yarn && webpack-dev-server --inline"
+    "watch": "yarn && webpack-dev-server --inline"
   },
   "private": "true",
   "dependencies": {
@@ -31,6 +31,7 @@
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "webpack-encoding-plugin": "^0.3.1"
   }
 }

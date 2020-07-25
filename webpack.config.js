@@ -1,6 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const EncodingPlugin = require("webpack-encoding-plugin");
 
 const scssRule = {
   test: /\.scss$/,
@@ -28,8 +29,6 @@ const scssRule = {
     },
   ],
 };
-
-// "watch": "yarn && concurrently \"webpack-dev-server\" \"webpack --watch --mode development\"",
 
 const babelRule = {
   test: /\.(js|ts)$/,
@@ -71,6 +70,9 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new CopyWebpackPlugin({
       patterns: [{ from: "./src/static", to: "static" }],
+    }),
+    new EncodingPlugin({
+      encoding: "utf-8",
     }),
   ],
   entry: [
