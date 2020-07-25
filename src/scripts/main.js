@@ -15,7 +15,7 @@ $(() => {
 
   // Set the date we're counting down to
   const countDownDate = new Date(
-    "Friday, January 1, 2021 7:00:00 AM GMT+07:00"
+    "Monday, September 7, 2020 0:00:00 AM GMT+00:00"
   ).getTime();
 
   // Update the count down every 1 second
